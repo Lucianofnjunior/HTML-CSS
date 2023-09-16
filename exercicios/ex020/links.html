@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+        # = id
+        . = Class
+        : = Pseudo-class
+        :: = Pseudo-element
+        > = Children
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:active {
+            color: red;
+        }
+
+        a.github {
+            color: yellow;
+        }
+
+        .github:hover {
+            color: red;
+        }
+
+        .github:active {
+            color: black;
+            text-decoration: underline;
+        }
+        .github::after {
+            content: ' -Link-';
+        }
+
+        .github::before {
+            content: ' > ';
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Disfarçando Link</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io/" target="_self" rel="external" class="github">Repositório Github</a></li>
+        <li><a href="https://www.youtube.com/watch?v=vMlrcOVr7po&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=22" target="_self" rel="external">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com/" target="_self" rel="external">Site CursoemVideo</a></li>
+    </ul>
+    <img src="../../desafios/d009/imagens/voltar.png" alt="voltar">
+</body>
+</html>
