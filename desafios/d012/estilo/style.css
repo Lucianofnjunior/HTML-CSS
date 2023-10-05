@@ -5,12 +5,38 @@
 }
 
 body {
-    background-color: rgb(222, 222, 222);
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header {
     background-color: black;
     color: white;
     text-align: center;
-    height: 20vh;
+    max-height: 60vw;
+    min-height: 20vw;
+}
+
+header > h1 {
+    padding-top: 40px;
+    font-size: 7vw;
+    font-family: ;
+}
+
+header > p {
+    padding-bottom: 30px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+p {
+    
 }
