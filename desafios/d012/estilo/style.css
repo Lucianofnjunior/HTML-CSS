@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+/*Fontes*/
+  @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
 * {
     margin: 0;
 }
@@ -18,9 +23,10 @@ header {
 }
 
 header > h1 {
-    padding-top: 40px;
-    font-size: 7vw;
-    font-family: ;
+    font-family: 'Passion One', cursive;
+    font-size: 10vw;
+    font-weight: bold;
+    padding-top: 6vw;
 }
 
 header > p {
@@ -37,6 +43,65 @@ header a:hover {
     text-decoration: underline;
 }
 
-p {
-    
+section {
+    padding-top: 10vw;
+    padding-bottom: 12vw;
+    padding-left: 3vw;   
+}
+
+section > p {
+    font-family: 'Sriracha', cursive;
+    font-size: 3.3vw;
+    line-height: 2em;
+}
+
+section.normal {
+    display: flex;
+    flex-direction: column;
+    gap: 7vw;
+}
+
+section.imagem-flor {
+    background-image: url(../imagens/background001.jpg);
+    background-position: center right;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem-flor > p {
+    background-color: rgba(0, 0, 0, 0.588);
+    color: white;
+    width: 40vw;
+    padding: 2vw;
+}
+
+section.imagem-pagina {
+    background-image: url(../imagens/background002.jpg);
+    background-position: center right;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem-pagina > p {
+    background-color: rgba(0, 0, 0, 0.588);
+    color: white;
+    width: 40vw;
+    padding: 2vw;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1vw;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
